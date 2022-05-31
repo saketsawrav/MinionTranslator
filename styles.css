@@ -1,0 +1,19 @@
+button {
+    display: block;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+textarea {
+    padding: 1rem;
+    width: 30%;
+    height: 20vh;
+}
+
+#txt-output {
+    border: black solid 1px;
+    background-color: lightgrey;
+    height: 20vh;
+    width: 34%;
+    margin-left: -1px;
+}
