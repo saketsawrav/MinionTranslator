@@ -8,6 +8,11 @@ function translateUrl(text) {
     return apiUrl + "?text=" + text
 }
 
+function errorHandler(error) {
+    console.log ("error occured: " + error)
+    alert("The server must be down for now,try again later")
+}
+
 function clickHandler() {
     console.log("clicked!!")
 
@@ -18,6 +23,7 @@ function clickHandler() {
     .then(json => {
     var translatedText = json.contents.translated
     outputText.innerText = translatedText})
+    .catch(errorHandler)
 }
 
 translateButton.addEventListener("click", clickHandler)
