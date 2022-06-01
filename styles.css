@@ -1,19 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+ }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 button {
     display: block;
     margin: 1rem;
     border-radius: 1rem;
+    margin-left: 35%;
+    padding: 10px;
 }
 
 textarea {
+    border: black solid 1px;
     padding: 1rem;
+    margin: 1rem;
     width: 30%;
     height: 20vh;
+    margin-left: 320px;
+    background-color: lightgrey;
+    border-radius: 1rem;
+}
+
+#btn-translate {
+    font-weight: bolder;
 }
 
 #txt-output {
     border: black solid 1px;
     background-color: lightgrey;
     height: 20vh;
-    width: 34%;
-    margin-left: -1px;
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.container {
+    background-color: yellow;
+    display: block;
+    margin: auto;
+    padding: 3rem;
+}
+
+.container h1{
+    text-align: center;
+    margin-right: 15%;
+    padding-top: 4%;
+}
+
+.container img{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-top: -4%;
 }
