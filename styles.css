@@ -102,6 +102,7 @@ blockquote {
 }
 
 @media only screen and (max-width:900px) and (orientation:landscape) {
+
     .content {
         text-align: center;
         margin: 10px auto;
@@ -118,7 +119,6 @@ blockquote {
         max-width: 300px;
     }
 
-
     .container {
         display: flex;
         padding: 1rem;
@@ -126,6 +126,7 @@ blockquote {
         align-items: center;
         gap: 10%;
     }
+    
     .container img {
         display: flex;
         float: left;
@@ -135,5 +136,34 @@ blockquote {
         display: flex;
         float: right;
         margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:500px) {
+
+    .content {
+        text-align: center;
+        margin: 10px auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 8%;
+    }
+
+    textarea {
+        max-width: 300px;
+        margin-left: 12px;
+    }
+    
+    blockquote {
+        max-width: 300px;
+        margin-left: 12px;
+    }
+
+    img {
+        margin-left: 50px;
+    }
+
+    .container h1{
+        margin-left: 30px;
     }
 }
