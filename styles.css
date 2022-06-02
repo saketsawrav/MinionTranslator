@@ -6,44 +6,51 @@
     font-family: Roboto;
  }
 
-body{
-    margin: 0px;
-    padding: 0px;
+.content {
+    text-align: center;
+    margin: 10px auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 37%;
+}
+
+textarea {
+    display: inline-block;
+    height: 20vh;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
 }
 
 button {
     display: block;
-    margin: 1rem;
-    border-radius: 1rem;
-    margin-left: 35%;
-    padding: 10px;
-    background-color: yellow;
-    border: 1px black solid;
-}
-
-textarea {
-    border: black solid 1px;
-    padding: 1rem;
-    margin: 1rem;
-    width: 30%;
-    height: 20vh;
-    margin-left: 320px;
-    background-color: lightgrey;
-    border-radius: 1rem;
-}
-
-#btn-translate {
+    width: fit-content;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: bolder;
+    font-size: large;
+    padding: 6px;
+    border-radius: 1rem;
+    background-color: yellow;
 }
 
-#txt-output {
-    border: black solid 1px;
-    background-color: lightgrey;
+blockquote {
+    align-items: center;
+    display: inline-block;
     height: 20vh;
-    width: 30%;
-    margin-left: 35%;
-    border-radius: 1rem;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 1rem;  
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
+    background-color: lightgrey;
 }
 
 .container {
@@ -61,8 +68,72 @@ textarea {
 
 .container img{
     float: left;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-top: -4%;
     max-width: 100%;
+}
+
+@media only screen and (min-width:350px) and (max-width:384px) {
+    .content {
+        text-align: center;
+        margin: 10px auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    textarea {
+        max-width: 300px;
+        margin-left: 12px;
+    }
+    
+    blockquote {
+        max-width: 300px;
+        margin-left: 12px;
+    }
+
+    img {
+        margin-left: 30px;
+    }
+
+    .container h1{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width:900px) and (orientation:landscape) {
+    .content {
+        text-align: center;
+        margin: 10px auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 32%;
+    }
+
+    textarea {
+        max-width: 300px;
+    }
+    
+    blockquote {
+        max-width: 300px;
+    }
+
+
+    .container {
+        display: flex;
+        padding: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10%;
+    }
+    .container img {
+        display: flex;
+        float: left;
+    }
+
+    .container h1{
+        display: flex;
+        float: right;
+        margin-left: 5px;
+    }
 }
