@@ -74,6 +74,7 @@ blockquote {
     max-width: 100%;
 }
 
+/* For small screen phones */
 @media only screen and (min-width:350px) and (max-width:384px) {
     .content {
         text-align: center;
@@ -101,6 +102,7 @@ blockquote {
     }
 }
 
+/* For phones in landscape mode */
 @media only screen and (max-width:900px) and (orientation:landscape) {
 
     .content {
@@ -139,7 +141,8 @@ blockquote {
     }
 }
 
-@media only screen and (min-width:400px) and (max-width:500px) {
+/* For large screen phones */
+@media only screen and (min-width:385px) and (max-width:500px) {
 
     .content {
         text-align: center;
@@ -168,6 +171,7 @@ blockquote {
     }
 }
 
+/* For tablets */
 @media only screen and (min-width:800px) and (max-width:1100px) {
 
     .content {
@@ -207,6 +211,7 @@ blockquote {
     }
 }
 
+/* For tablets in landscape mode */
 @media only screen and (max-width:1100px) and (orientation:landscape) {
 
     .content {
