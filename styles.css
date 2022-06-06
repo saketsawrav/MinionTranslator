@@ -75,7 +75,7 @@ blockquote {
 }
 
 /* For small screen phones */
-@media only screen and (min-width:350px) and (max-width:383px) {
+@media only screen and (min-width:350px) and (max-width:375px) {
     .content {
         text-align: center;
         margin: 10px auto;
@@ -103,7 +103,7 @@ blockquote {
 }
 
 /* For small screen phones */
-@media only screen and (min-width:384px) and (max-width:399px) {
+@media only screen and (min-width:376px) and (max-width:437px) {
     .content {
         text-align: center;
         margin: 10px auto;
